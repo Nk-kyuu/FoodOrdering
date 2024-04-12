@@ -1,0 +1,68 @@
+.content_wrapper a{
+    text-decoration: none;
+}
+
+.amountcontroller{
+    margin-top: 1rem;
+}
+
+.amountwrap{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cart_amountbox{
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    background: rgb(231, 231, 231);
+    user-select: none;
+}
+
+.icon_wrap{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.randombtn{
+    display: flex;
+    align-items: center;
+
+    background: rgb(109, 188, 214);
+    color: #fff;
+    border: .1rem solid transparent;
+    border-radius: 5rem;
+    cursor: pointer;
+    width: fit-content;
+    padding: .2rem 1rem;
+    transition: all .1s;
+}
+.randombtn > div:first-child{
+    width: 40px;
+    height: 40px;
+}
+.randombtn path{
+    fill: currentColor;
+    transition: all .1s;
+}
+
+.randombtn:hover{
+    color: #fff;
+    background: #1191bc;
+    border: .1rem solid #1191bc;
+}
+
+@media screen and (max-width: 600px) {
+    .amountwrap{
+        justify-content: center;
+    }
+    .amountcontroller{
+        text-align: center;
+    }
+    .randombtn{
+        justify-content: center;
+        width: 100%;
+    }
+}

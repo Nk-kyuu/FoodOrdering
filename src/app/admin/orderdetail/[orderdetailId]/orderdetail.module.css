@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.orderDetails {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.orderDetails h1 {
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    margin-left: 15%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.itemTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.itemTable th,
+.itemTable td {
+    padding: 8px;
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.select {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 24px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #58c2e6;
+}
+
+#h2 {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    width: 20%;
+}
+
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dropdown select option {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.orderList {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.otherDetails {
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.editButton {
+    background-color: #1191bc;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 60%; 
+    max-width: 100px; 
+    padding: 8px;
+    display: block;
+}
+
+.cancelButton {
+    background-color: #b91212;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 60%; 
+    max-width: 100px; 
+    padding: 8px;
+    display: block;
+}

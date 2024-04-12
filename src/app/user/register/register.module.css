@@ -1,0 +1,94 @@
+.registerContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 50px;
+    width: 600px;
+    height: 650px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; 
+    margin-top: 10vh; 
+}
+
+.loginTitle {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.formGroup {
+    margin-bottom: 12px;
+}
+
+.inline {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.inline > div {
+    flex: 1;
+    margin-right: 10px; 
+}
+
+.inline > div:last-child {
+    margin-right: 0;
+}
+
+.formInput{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.registerButton {
+    background-color: white;
+    color: #1191bc;
+    border: 1px solid #1191bc;
+    font-size: 16px; 
+    border-radius: 7px;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100px;
+    padding: 8px;
+}
+
+.registerFormButton {
+    background-color: #1191bc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-top: 8px;
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    width: 100px;
+    padding: 8px;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .registerContainer {
+        width: 90%;
+    }
+
+    .registerFormButton {
+        width: 50%;
+        max-width: 200px; 
+    }
+
+}

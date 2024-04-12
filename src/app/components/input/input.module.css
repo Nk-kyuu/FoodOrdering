@@ -1,0 +1,42 @@
+.wrapper{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.inputbox{
+    all: unset;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: 1.75px solid;
+    padding: .5rem;
+    border-radius: 5rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.placeholder{
+    position: absolute;
+    pointer-events: none;
+    transition: all .2s;
+    left: 0;
+    top: 50%;
+    transform: translate(10%, -50%);
+    background: #fff;
+    padding: 0 .25rem;
+}
+
+.focus .placeholder{
+    transform: translate(10%, -175%) scale(0.9);
+    font-size: .8rem;
+    padding: 0 .35rem;
+}
+
+.inputbox:focus{
+    border: 1.75px solid currentColor;
+}
+.inputbox:disabled{
+    color: rgb(251, 78, 78);
+}

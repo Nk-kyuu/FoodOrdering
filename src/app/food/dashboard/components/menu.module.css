@@ -1,0 +1,17 @@
+.menu_item_root{
+    display: grid;
+    gap: 1.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1rem 0;
+}
+.inline{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+    .inline{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

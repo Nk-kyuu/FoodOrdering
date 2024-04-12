@@ -1,0 +1,106 @@
+.loginContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 50px;
+    height: 400px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20vh;
+}
+
+.registerContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 50px;
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    max-width: 600px; 
+    margin-top: 10vh; 
+}
+
+.loginTitle {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.formGroup {
+    margin-bottom: 12px;
+}
+
+.inline {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+.formInput{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.loginButton {
+    background-color: #1191bc;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 50%; 
+    max-width: 100px; 
+    padding: 8px;
+    display: block;
+}
+
+.registerButton {
+    background-color: white;
+    color: #1191bc;
+    border: 1px solid #1191bc;
+    font-size: 16px; 
+    border-radius: 7px;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .loginContainer {
+        width: 90%;
+    }
+
+    .loginButton {
+        width: 100%; 
+    }
+}

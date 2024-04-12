@@ -1,0 +1,149 @@
+.cart_wrapper{
+    height: calc(100dvh - 49px);
+}
+
+.cart_itemlist{
+    list-style: none;
+    max-height: 65%;
+    overflow: auto;
+}
+
+.receive_selector{
+    margin: 1rem 0;
+}
+
+.receive_selector{
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.pickup_btn{
+    padding: 1rem 0;
+    flex-grow: 1;
+    background: white;
+    border: .1rem solid #1191bc;
+    color: #1191bc;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.selected, .pickup_btn:hover{
+    background: #1191bc;
+    color: #fff;
+    border: .1rem solid transparent;
+}
+
+.timepicker_wrap{
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+}
+.purchasewrap{
+    width: 100%;
+}
+
+.purchasebtn{
+    width: 100%;
+    background: #1191bc;
+    color: #fff;
+    border: .1rem solid transparent;
+    padding: 1rem 0;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.purchasebtn:hover, .couponbtn:hover{
+    background: #1385ab;
+    
+}
+
+.couponwrap{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.couponinput_wrap{
+    flex-grow: 1;
+}
+
+.couponbtn{
+    background: #1191bc;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+.total_price{
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    border-radius: 5rem;
+    background: rgb(231, 231, 231);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_wrap{
+    display: none;
+    width: 2rem;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .receive_selector{
+        flex-direction: column;
+    }
+    .couponbtn{
+        flex-grow: 1;
+    }
+    .cart_itemlist{
+        max-height: 52dvh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .icon_wrap{
+        display: block;
+    }
+
+    .cart_itemlist{
+        max-height: 75%;
+    }
+
+    .checkout_wrap{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+
+    }
+    .receive_selector{
+        margin-left: auto;
+        width: 20%;
+    }
+    
+    .timepicker_wrap{
+        display: flex;
+        gap: 1rem;
+        flex-grow: 1;
+    }
+    .purchasewrap{
+        width: 20%;
+    }
+    
+
+    .couponwrap{
+        width: 20%;
+        margin-left: auto;
+        align-items: center;
+    }
+    
+    
+    .total_price{
+        flex: .5;
+        margin-top: 0;
+        padding: 1rem 2rem;
+    }
+}
